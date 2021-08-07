@@ -6,6 +6,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import {CountriesComponent} from './countries/countries.component';
 import {HttpClientModule} from "@angular/common/http";
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatTabsModule,
     HttpClientModule,
   ],
   providers: [],
