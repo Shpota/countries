@@ -1,19 +1,20 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
-import {Country} from "./model";
-import {catchError, map} from 'rxjs/operators';
-import {environment} from '../../environments/environment';
+import {environment} from "../../environments/environment";
+import {catchError, map} from "rxjs/operators";
+import {Currency} from "./currency";
 
 @Injectable({
   providedIn: 'root'
 })
-export class CountriesService {
+export class CurrenciesService {
+
   public constructor(public http: HttpClient) {}
 
-  getAll(): Observable<Country[]> {
-    return this.http.get<Country[]>(
-      `${environment.url}/country?max=${environment.maxResults}`,
+  getAll(): Observable<Currency[]> {
+    return this.http.get<Currency[]>(
+      `${environment.url}/currency/fiat?max=${environment.maxResults}`,
       {headers: new HttpHeaders().set('Content-Type', 'application/json')}
     ).pipe(
       map(data => data),
