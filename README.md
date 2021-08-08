@@ -1,4 +1,4 @@
-# Countries
+# Countries [![build](https://github.com/Shpota/countries/actions/workflows/build.yml/badge.svg)](https://github.com/Shpota/countries/actions/workflows/build.yml)
 
 Show countries and currencies
 

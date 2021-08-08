@@ -12,3 +12,4 @@ jobs:
       - run: npm install -g @angular/cli@12.2.0
         name: Install Angular CLI
       - run: npm install && npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+        name: Build & Test
