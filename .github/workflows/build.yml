@@ -11,4 +11,4 @@ jobs:
           node-version: '16.x'
       - run: npm install -g @angular/cli@12.2.0
         name: Install Angular CLI
-      - run: npm test
+      - run: npm test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
