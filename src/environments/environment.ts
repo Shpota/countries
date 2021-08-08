@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   url: 'https://api.coindirect.com/api',
+  maxResults: 100000,
 };
 
 /*
